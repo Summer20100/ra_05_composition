@@ -1,0 +1,87 @@
+.App {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: grey; */
+}
+
+.elment {
+  padding: 15px;
+  background: #333;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: start
+}
+
+.collapsedLabel {
+  border-radius: 100%;
+  -webkit-animation: myAnimOpen .3s ease 0s 1 both;
+          animation: myAnimOpen .3s ease 0s 1 both;
+}
+
+.expandedLabel {
+  border-radius: 100%;
+  -webkit-animation: myAnimClose .3s ease 0s 1 both;
+          animation: myAnimClose .3s ease 0s 1 both;
+}
+
+@-webkit-keyframes myAnimOpen {
+  0% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateX(-100deg);
+    transform-origin: top;
+  }
+}
+
+@keyframes myAnimOpen {
+  0% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateX(-100deg);
+    transform-origin: top;
+  }
+}
+
+
+@-webkit-keyframes myAnimClose {
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
+
+  0% {
+    opacity: 0;
+    transform: rotateX(-100deg);
+    transform-origin: top;
+  }
+}
+
+
+@keyframes myAnimClose {
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
+
+  0% {
+    opacity: 0;
+    transform: rotateX(-100deg);
+    transform-origin: top;
+  }
+}
