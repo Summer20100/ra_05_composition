@@ -2,6 +2,6 @@
 
 ### 05_composition
 
-1. [Hex2rgb](./src/components/Inverter/)
-2. [Steps](./src/components/Steps/)
-3. [Photo](./src/components/Photo/)
+1. [Cards](./src/components/Cards/)
+2. [Decomposition](./src/components/Decomposition/)
+3. [Collapse](./src/components/Collapse/)
